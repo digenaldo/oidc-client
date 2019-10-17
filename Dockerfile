@@ -10,7 +10,6 @@
 #
 
 FROM python:2.7
-MAINTAINER Curity AB
 
 ADD requirements.txt /usr/src/
 RUN pip install --no-cache-dir -r /usr/src/requirements.txt
