@@ -11,8 +11,6 @@
 
 FROM python:2.7
 
-RUN apk add --no-cache ca-certificates tzdata
-
 ADD requirements.txt /usr/src/
 RUN pip install --no-cache-dir -r /usr/src/requirements.txt
 WORKDIR /oidc-client
